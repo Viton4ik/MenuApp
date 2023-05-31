@@ -1,0 +1,146 @@
+1. python3 -m venv venv
+
+2. source venv/bin/activate
+
+3. Webpack/React installation  (~/DevProjects/FullStack/MenuApp/FrontEnd)
+
+- cd FrontEnd
+ 
+- npm init -y
+
+- npm install webpack webpack-cli
+
+- npm install @babel/core babel-loader @babel/preset-react @babel/preset-env
+
+- package.json: добавим в объект:
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack"
+    or
+    "start": "webpack --mode-development --watch",
+    "build": "webpack --mode-production"
+
+- создадим файл с названием webpack.config.js:
+    entry: "./src/index.js",
+    output: {
+        path: path.join(__dirname, "/dist"),
+        filename: "index.js",
+        publicPath: '/',   -чтобы гарантировать, что все ресурсы будут ссылаться на корневой путь
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,              // test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
+                }
+            },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
+            }
+        ]
+    }
+
+- npm install react react-dom
+
+- npm install style-loader css-loader
+
+- src/index.js to be created
+
+- src/index.html to be created with (<div id="root"></div>)
+
+- .babelrc file to be created
+    {
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
+    }
+
+- npm i html-webpack-plugin
+
+    for webpack.config.js -> const HtmlWebpackPlugin = require('html-webpack-plugin') and
+    plugins: [
+            new HtmlWebpackPlugin({
+                template: "./src/index.html"
+            })
+        ]
+
+- create components/App.js
+- create styles/App.css
+
+- npm install --save-dev webpack-dev-server
+
+- npm start
+
+- npm run build
+
+4. or
+- cd.. (from MenuApp)
+- npx create-react-app my-app (my-app = FrontEnd)
+- cd FrontEnd
+- npm run eject
+
+
+5.  Routing (task F4.2. Базовый роутинг в React)
+- npm install --save react-router-dom
+
+6. npm i --save swagger-ui-react
+ - Swagger.jsx to be created
+
+7. Django Installation$Preparation
+ - cd ~/DevProjects/FullStack/MenuApp
+ - source venv/bin/activate
+ - cd BackEnd
+ - pip install django
+ - django-admin startproject MenuApp
+ - cd MenuApp
+ - python3 manage.py startapp App
+
+ - python3 manage.py migrate
+ - python3 manage.py makemigrations
+
+ - python3 manage.py createsuperuser
+ - pip install python-dotenv==0.21.0
+ - pip install env
+ - pip install djangorestframework
+ - pip install markdown       # Markdown support for the browsable API.
+ - pip install django-filter  # Filtering support
+ - pip install django-attachments
+
+ - python3 manage.py runserver (~/DevProjects/FullStack/MenuApp/BackEnd/MenuApp)
+
+ - models, urls, serializers, views
+
+8. Swagger
+ - pip install django djangorestframework drf-yasg
+ - schema_view has to be added to urls.py
+
+
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+10.
+npm install axios???
+
+11. https://react-bootstrap.github.io/getting-started/introduction
+npm install react-bootstrap bootstrap
+
+12.
+npm i prop-types
+    - data validation. Development mode ONLY!
+
+
+REDUX
+17. npm install --save redux
+ -import { createStore } from "redux"; in index.tsx
+
+18. npm i react-redux --save --save-exact
+
+19. reducers, combineReducers, applyMiddleware
+
+20.  add REDUX_DEVTOOLS in Chrome + import compose
+ - window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))

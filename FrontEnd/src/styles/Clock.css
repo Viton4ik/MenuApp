@@ -1,0 +1,11 @@
+.time {
+    /* font-family: var(--font-pacifico); */
+    /* text-shadow: 2px 2px 2px rgb(30, 41, 65); */
+    color: rgba(20, 22, 143, 0.863);
+    text-align: center;
+    font-size: 18px;
+}
+
+.time:hover {
+    color: rgba(90, 90, 175);
+}

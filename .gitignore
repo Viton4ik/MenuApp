@@ -1,0 +1,14 @@
+venv
+
+.env
+
+steps.txt //
+
+requirements.txt
+
+node_modules
+
+__pycache__
+
+useful_django.txt
+
