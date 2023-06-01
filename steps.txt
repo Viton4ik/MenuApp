@@ -106,6 +106,24 @@
  - pip install django-filter  # Filtering support
  - pip install django-attachments
 
+ - pip install django-cors-headers //Настройки CORS 
+    
+        INSTALLED_APPS = [
+        # Другие установленные приложения
+        'corsheaders',
+        ]
+
+        MIDDLEWARE = [
+            # Другие промежуточные слои
+            'corsheaders.middleware.CorsMiddleware',
+            # Другие промежуточные слои
+        ]
+
+        CORS_ORIGIN_ALLOW_ALL = False
+        CORS_ORIGIN_WHITELIST = [
+            'http://localhost:3000',  # Добавьте ваш домен клиента
+        ]
+
  - python3 manage.py runserver (~/DevProjects/FullStack/MenuApp/BackEnd/MenuApp)
 
  - models, urls, serializers, views

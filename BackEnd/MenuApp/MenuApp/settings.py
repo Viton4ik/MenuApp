@@ -61,6 +61,8 @@ INSTALLED_APPS = [
 
     # for swagger
     'drf_yasg',
+
+    'corsheaders',
 ]
 
 SITE_ID = 1  # allauth, flatpages, site
@@ -73,6 +75,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'MenuApp.urls'
@@ -169,3 +172,9 @@ REST_FRAMEWORK = {
     #  'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     #    ]
 }
+
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:8002',
+    'http://localhost:3000',
+]

@@ -1,0 +1,18 @@
+
+
+.home-container {
+    font-size: 40px;
+    font-family: var(--font-pacifico);
+    text-align: center;
+    vertical-align: center;
+    color: antiquewhite;
+    text-shadow: 5px 5px 5px rgb(21, 24, 24);
+}
+
+.link {
+    color: rgb(47, 105, 172);
+}
+
+.link:visited:hover {
+    color: rgba(196, 173, 101, 0.863);
+}

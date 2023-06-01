@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Clock from "../Clock/Clock.jsx";
 
@@ -9,18 +9,17 @@ import "../../styles/Nav.css";
 
 function Nav(props) {
 
-
         return (
         <nav >
             <div className="container">
                 <div>
-                    <Link to='/'>Главная</Link>
+                    <Link to='/' onClick={() => props.mainPaigePic(true)}>Главная</Link>
                 </div>
                 <div>
-                    <Link to='/categories'>Категории</Link><>   </>
+                    <Link to='/categories' onClick={() => props.mainPaigePic(false)}>Категории</Link><>   </>
                 </div>
                 <div>
-                    <Link to='/all'>Все блюда</Link><>   </>
+                    <Link to='/all' onClick={() => props.mainPaigePic(false)}>Все блюда</Link><>   </>
                 </div>
                 {/* <div>
                     <Link to='/users'>Users</Link><>   </>

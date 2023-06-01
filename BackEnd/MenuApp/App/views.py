@@ -38,7 +38,7 @@ class CategoryViewset(viewsets.ModelViewSet):
     filterset_fields = ['id', 'name', ]
 
     # deny all by default using rest_framework
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class PrescriptionViewSet(viewsets.ModelViewSet):

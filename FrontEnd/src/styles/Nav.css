@@ -9,6 +9,7 @@ nav {
     align-items: center;
     /*margin: 10px;*/
 }
+
 .container {
     display: flex;
     justify-content: space-evenly;

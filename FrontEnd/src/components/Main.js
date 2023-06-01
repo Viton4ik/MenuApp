@@ -17,16 +17,24 @@ import "../styles/Main.css";
 
 function Main() {
 
+    // set main background handler
+    document.body.style.backgroundImage = 'url("https://i0.wp.com/mvslim.com/wp-content/uploads/2016/06/finch-fork-final-33-a8804fa5.jpg?w=1700&ssl=1")';
+    function mainPaigePic(flag) {
+        flag === true ?
+            document.body.style.backgroundImage = 'url("https://i0.wp.com/mvslim.com/wp-content/uploads/2016/06/finch-fork-final-33-a8804fa5.jpg?w=1700&ssl=1")':
+            document.body.style.backgroundImage = 'none';
+    };
+
 
     return(
         <main>
             <div>
-                <Nav/>
+                <Nav mainPaigePic={ mainPaigePic } />
 
                 {/* </Nav> */}
 
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Home mainPaigePic={ mainPaigePic } />} />
                     <Route path="/all" element={<All />} />
                     <Route path="/categories" element={<Categories />} />
 
