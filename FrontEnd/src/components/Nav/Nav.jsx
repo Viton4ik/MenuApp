@@ -16,10 +16,10 @@ function Nav(props) {
                     <Link to='/' onClick={() => props.mainPaigePic(true)}>Главная</Link>
                 </div>
                 <div>
-                    <Link to='/categories' onClick={() => props.mainPaigePic(false)}>Категории</Link><>   </>
+                    <Link to='/categories' onClick={() => props.mainPaigePic(true)}>Категории</Link><>   </>
                 </div>
                 <div>
-                    <Link to='/all' onClick={() => props.mainPaigePic(false)}>Все блюда</Link><>   </>
+                    <Link to='/all' onClick={() => props.mainPaigePic(false)}>Блюда</Link><>   </>
                 </div>
                 {/* <div>
                     <Link to='/users'>Users</Link><>   </>

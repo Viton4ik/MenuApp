@@ -27,7 +27,7 @@ class FileViewset(viewsets.ModelViewSet):
     filterset_fields = ['id', 'name', ]
 
     # deny all by default using rest_framework
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticated|ReadOnly]
 
 
 class CategoryViewset(viewsets.ModelViewSet):
@@ -38,7 +38,7 @@ class CategoryViewset(viewsets.ModelViewSet):
     filterset_fields = ['id', 'name', ]
 
     # deny all by default using rest_framework
-    # permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticated|ReadOnly]
 
 
 class PrescriptionViewSet(viewsets.ModelViewSet):
@@ -49,7 +49,7 @@ class PrescriptionViewSet(viewsets.ModelViewSet):
     filterset_fields = ['id', 'name', 'description', 'category', 'files', 'createTime', ]
 
     # deny all by default using rest_framework
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticated|ReadOnly]
 
 
 class UserViewset(viewsets.ModelViewSet):

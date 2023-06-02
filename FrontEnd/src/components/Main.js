@@ -11,14 +11,19 @@ import User from "./User/User";
 import Swagger from "./Swagger/Swagger.jsx";
 
 import { Routes, Route, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import "../styles/Main.css";
 
 
 function Main() {
 
+    // get the address in the address line after the first '/'
+    const location = useLocation(); 
+
     // set main background handler
-    document.body.style.backgroundImage = 'url("https://i0.wp.com/mvslim.com/wp-content/uploads/2016/06/finch-fork-final-33-a8804fa5.jpg?w=1700&ssl=1")';
+    location === '/all' ? document.body.style.backgroundImage = 'url("https://i0.wp.com/mvslim.com/wp-content/uploads/2016/06/finch-fork-final-33-a8804fa5.jpg?w=1700&ssl=1")' : "none";
+    
     function mainPaigePic(flag) {
         flag === true ?
             document.body.style.backgroundImage = 'url("https://i0.wp.com/mvslim.com/wp-content/uploads/2016/06/finch-fork-final-33-a8804fa5.jpg?w=1700&ssl=1")':
