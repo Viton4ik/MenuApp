@@ -1,19 +1,26 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-import "../../styles/All.css";
+// import "../../styles/All.css";
 
+const Category = (props) => {
 
-const All = () => {
-
+    // get id
+    const params = useParams();
+    
     const [prescriptions, setPrescriptions] = React.useState();
     const [files, setFiles] = React.useState();
+    const [categories, setCategories] = React.useState('');
     
+    // get background off
+    props.mainPagePic(false);
+
     React.useEffect(() => {
         
         //get prescriptions data
-        fetch(`http://127.0.0.1:8000/menu/api/prescription/`)
+        fetch(`http://127.0.0.1:8000/menu/api/prescription/?category=${params.id}`)
         .then(response => {
             const result = response.json();
             return result;
@@ -36,13 +43,25 @@ const All = () => {
         })
         .catch(error => console.log('Error:', error));
 
+        //get category data
+        fetch(`http://127.0.0.1:8000/menu/api/category/${params.id}/`)
+        .then(response => {
+            const result = response.json();
+            return result;
+        })
+        .then(data => {
+            // console.log("categoryFetchData:", data);
+            setCategories(data.name);
+        })
+            .catch(error => console.log('Error:', error));
+        
     }, []);
 
 
     return (
         <>
             <h2 className="home-container">
-                Все блюда:
+                {categories} :
             </h2>
             <div className={"all-container"}>
                
@@ -53,17 +72,15 @@ const All = () => {
                                         <img key={file.name} src={file.file} alt={file.name}/> : ""
                                     ))
                             } 
-                            
                         <br></br>
                         <Link to={`/all/${prescription.id}`} style={{paddingBottom:"80px"}} className="link">{prescription.name} </Link>
                         
                     </div>
                     )
                 ):"" }
-
             </div>
         </>
     );
 }
 
-export default All;
+export default Category;

@@ -5,10 +5,10 @@ import Nav from "./Nav/Nav.jsx";
 import Home from "../Home/Home.jsx";
 import All from "./All/All.jsx";
 import Categories from "./Categories/Categories.jsx";
+import Category from "./Categories/Category.jsx";
+import Prescription from "./Prescription/Prescription.jsx";
 
-import Users from "./Users/Users.jsx";
-import User from "./User/User";
-import Swagger from "./Swagger/Swagger.jsx";
+import Users from "./Users/Users.jsx"; //doesn't work. Example only
 
 import { Routes, Route, Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -20,32 +20,34 @@ function Main() {
 
     // get the address in the address line after the first '/'
     const location = useLocation(); 
+    const picUrl = 'https://retailworldmagazine.com.au/wp-content/uploads/2021/08/shutterstock_384573541.jpg';
 
-    // set main background handler
-    location === '/all' ? document.body.style.backgroundImage = 'url("https://i0.wp.com/mvslim.com/wp-content/uploads/2016/06/finch-fork-final-33-a8804fa5.jpg?w=1700&ssl=1")' : "none";
+    // set main background handler ========
+    location.pathname !== '/all' ? 
+    document.body.style.backgroundImage = `url(${picUrl})`:
+    document.body.style.backgroundImage = 'none';
     
-    function mainPaigePic(flag) {
+    function mainPagePic(flag) {
         flag === true ?
-            document.body.style.backgroundImage = 'url("https://i0.wp.com/mvslim.com/wp-content/uploads/2016/06/finch-fork-final-33-a8804fa5.jpg?w=1700&ssl=1")':
+            document.body.style.backgroundImage = `url(${picUrl})`:
             document.body.style.backgroundImage = 'none';
     };
-
+    // set main background handler ========
 
     return(
         <main>
             <div>
-                <Nav mainPaigePic={ mainPaigePic } />
-
-                {/* </Nav> */}
+                <Nav mainPagePic={ mainPagePic } />
 
                 <Routes>
-                    <Route path="/" element={<Home mainPaigePic={ mainPaigePic } />} />
+                    <Route path="/" element={<Home mainPagePic={ mainPagePic } />} />
                     <Route path="/all" element={<All />} />
                     <Route path="/categories" element={<Categories />} />
-
-                    {/* <Route path='/users' element={<Users />} />
-                    <Route path="/users/:id" element={<User />} />
-                    <Route path="/swagger" element={<Swagger />} /> */}
+                    <Route path="/all/:id" element={<Prescription mainPagePic={mainPagePic} />} />
+                    <Route path="/categories/:id" element={<Category mainPagePic={mainPagePic} />} />
+                    
+                    {/* //doesn't work. Example only */}
+                    <Route path='/users' element={<Users mainPagePic={ mainPagePic } />} />
                 </Routes>
             </div>
         </main>

@@ -7,6 +7,4 @@ html, body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background: linear-gradient(141deg, rgb(255, 255, 255) 0%, #c0d3fa 51%, #e4eaf7 75%); /* gradient */
-    /* background: linear-gradient(141deg, rgb(255, 255, 255) 0%, #d2d6df 51%, #b8bfce 75%);  */
-    /* gradient */
 }

@@ -13,19 +13,14 @@ function Nav(props) {
         <nav >
             <div className="container">
                 <div>
-                    <Link to='/' onClick={() => props.mainPaigePic(true)}>Главная</Link>
+                    <Link to='/' onClick={() => props.mainPagePic(true)}>Главная</Link>
                 </div>
                 <div>
-                    <Link to='/categories' onClick={() => props.mainPaigePic(true)}>Категории</Link><>   </>
+                    <Link to='/categories' onClick={() => props.mainPagePic(true)}>Категории</Link><>   </>
                 </div>
                 <div>
-                    <Link to='/all' onClick={() => props.mainPaigePic(false)}>Блюда</Link><>   </>
+                    <Link to='/all' onClick={() => props.mainPagePic(false)}>Блюда</Link><>   </>
                 </div>
-                {/* <div>
-                    <Link to='/users'>Users</Link><>   </>
-                    <Link to='/users/15'>15</Link><>   </>
-                    <Link to='/swagger'>Swagger</Link>
-                </div>        */}
             </div>
 
         <div className="time">

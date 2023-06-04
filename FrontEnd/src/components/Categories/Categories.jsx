@@ -10,16 +10,6 @@ const Categories = () => {
     const [categories, setСategories] = React.useState([]);
 
     React.useEffect(() => {
-        // fetch(`http://127.0.0.1:8000/menu/api/category/`)
-        // .then(response => {
-        //     const result = response.json();
-        //     return result;
-        // })
-        // .then(data => {
-        //     console.log("fetchData:", data.results);
-        //     setСategories(data.results);
-        // })
-        // .catch(error => console.log('Error:', error));
 
     axios.get(`http://127.0.0.1:8000/menu/api/category/`)
         .then(result => {
@@ -35,8 +25,6 @@ const Categories = () => {
 
     }, []);
 
-    // console.log("categories:", categories);
-    // console.log("categories_logic:", ((categories.map(category => category.name))));
     
     return (
         <>
@@ -47,7 +35,7 @@ const Categories = () => {
                 <ul>
                 {categories ? categories.map((category) => (
                     <ol key={category.id} >
-                        <Link to={`/${category.id}`} className="link">{category.name} </Link>
+                        <Link to={`/categories/${category.id}`} className="link">{category.name} </Link>
                     </ol>
                     )
                 ):"" }
