@@ -133,24 +133,7 @@
  - schema_view has to be added to urls.py
 
 
-
-
-
-
-
-
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-10.
-npm install axios???
-
-11. https://react-bootstrap.github.io/getting-started/introduction
-npm install react-bootstrap bootstrap
-
-12.
-npm i prop-types
-    - data validation. Development mode ONLY!
-
+----------useless function here------------
 
 REDUX
 17. npm install --save redux

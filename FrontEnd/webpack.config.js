@@ -14,17 +14,6 @@ module.exports = {
         // port: 8002,
         port: 3000,
         historyApiFallback: true,
-
-        // historyApiFallback: {
-        //     disableDotRule: true,
-        //     // rewrites: [
-        //     //   { from: /^\/$/, to: '/index.html' },
-        //     //     { from: /./, to: '/index.html' },
-        //     //     // { from: /\/users\/.*/, to: '/index.html' },
-        //     // ],
-        // },
-        
-        // hot: true, // HMR
     },
     module: {
         rules: [
