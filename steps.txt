@@ -132,16 +132,3 @@
  - pip install django djangorestframework drf-yasg
  - schema_view has to be added to urls.py
 
-
-----------useless function here------------
-
-REDUX
-17. npm install --save redux
- -import { createStore } from "redux"; in index.tsx
-
-18. npm i react-redux --save --save-exact
-
-19. reducers, combineReducers, applyMiddleware
-
-20.  add REDUX_DEVTOOLS in Chrome + import compose
- - window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))
