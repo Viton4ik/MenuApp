@@ -4,11 +4,13 @@
 
 ##
 ✨Idea:✨
-> Create a website with a variety of food recipes
+> Create a website with a variety of food recipes (Prescriptions with Category)
 > 
-> Backend with Django REST
+> Backend with Django REST API
 >
 > Frontend with REACT/WEBPACK 
+>
+> SWAGGER doc
 >
 
 ## BackEnd
@@ -94,4 +96,22 @@ npm start
 
 <img src="https://img.shields.io/static/v1?label=1&message=REST API&color=9cf"/>
 <h3 align="center"><img src="https://github.com/Viton4ik/MenuApp/blob/master/BackEnd/MenuApp/media/pictures/REST.png"/></h3> 
+
+<img src="https://img.shields.io/static/v1?label=2&message=SWAGGER&color=9cf"/>
+<h3 align="center"><img src="https://github.com/Viton4ik/MenuApp/blob/master/BackEnd/MenuApp/media/pictures/SWAGGER.png"/></h3> 
+
+<img src="https://img.shields.io/static/v1?label=3&message=REDOC&color=9cf"/>
+<h3 align="center"><img src="https://github.com/Viton4ik/MenuApp/blob/master/BackEnd/MenuApp/media/pictures/REDOC.png"/></h3> 
+
+<img src="https://img.shields.io/static/v1?label=4&message=MainPage&color=9cf"/>
+<h3 align="center"><img src="https://github.com/Viton4ik/MenuApp/blob/master/BackEnd/MenuApp/media/pictures/MainPage.png"/></h3> 
+
+<img src="https://img.shields.io/static/v1?label=5&message=Categories&color=9cf"/>
+<h3 align="center"><img src="https://github.com/Viton4ik/MenuApp/blob/master/BackEnd/MenuApp/media/pictures/Category.png"/></h3> 
+
+<img src="https://img.shields.io/static/v1?label=6&message=All Prescriptions&color=9cf"/>
+<h3 align="center"><img src="https://github.com/Viton4ik/MenuApp/blob/master/BackEnd/MenuApp/media/pictures/PrescriptionsAll.png"/></h3> 
+
+<img src="https://img.shields.io/static/v1?label=7&message=Prescription&color=9cf"/>
+<h3 align="center"><img src="https://github.com/Viton4ik/MenuApp/blob/master/BackEnd/MenuApp/media/pictures/Prescription.png"/></h3> 
 
