@@ -83,7 +83,7 @@
 5.  Routing (task F4.2. Базовый роутинг в React)
 - npm install --save react-router-dom
 
-6. npm i --save swagger-ui-react
+6. npm i --save swagger-ui-react //doesn't
  - Swagger.jsx to be created
 
 7. Django Installation$Preparation
@@ -131,4 +131,5 @@
 8. Swagger
  - pip install django djangorestframework drf-yasg
  - schema_view has to be added to urls.py
+
 
