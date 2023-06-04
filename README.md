@@ -18,13 +18,13 @@
 - Category contains: id, name
 - Files contain: id, name, file-url
 - Prescription contains: id, name, description, creation date
-- Django REST API
-- Swagger
-- Redoc
+- Django REST API (http://127.0.0.1:8000/menu/api/)
+- Swagger (http://127.0.0.1:8000/menu/swagger/)
+- Redoc   (http://127.0.0.1:8000/menu/redoc/)
 
 ## FrontEnd
 
-- using of Django REST API
+- using of Django REST API (http://127.0.0.1:8000/menu/api/)
 - React/Webpack manually adjasted
 - webpack-dev-server
 - Routing
