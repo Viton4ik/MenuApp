@@ -132,4 +132,3 @@
  - pip install django djangorestframework drf-yasg
  - schema_view has to be added to urls.py
 
-

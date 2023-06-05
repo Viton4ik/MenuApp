@@ -4,8 +4,6 @@ venv
 
 steps.txt //
 
-requirements.txt
-
 node_modules
 
 __pycache__
