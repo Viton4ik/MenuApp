@@ -55,7 +55,7 @@ source venv/bin/activate
 - Download libraries
 
 ```sh
-cd BackEnd
+cd BackEnd/MenuApp
 pip3 install -r requirements.txt
 ```
 - Go to the project folder
