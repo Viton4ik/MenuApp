@@ -39,6 +39,9 @@
 ```sh
 git clone https://github.com/Viton4ik/MenuApp.git
 ```
+```sh
+cd MenuApp
+```
 - Create a virtual environment
 
 ```sh
