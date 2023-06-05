@@ -55,6 +55,7 @@ source venv/bin/activate
 - Download libraries
 
 ```sh
+cd BackEnd
 pip3 install -r requirements.txt
 ```
 - Go to the project folder
