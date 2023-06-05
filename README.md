@@ -37,7 +37,7 @@
 - Create a new folder in VS Code/PyCharm/Atom and download the project
 
 ```sh
-https://github.com/Viton4ik/MenuApp
+git clone https://github.com/Viton4ik/MenuApp.git
 ```
 - Create a virtual environment
 
