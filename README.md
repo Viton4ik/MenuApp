@@ -66,6 +66,7 @@ python3 manage.py runserver
 #### _FrontEnd_
 
 - Webpack/React preparation. 
+- Open a new terminal
 
 ```sh
 cd FrontEnd
@@ -86,7 +87,7 @@ npm i html-webpack-plugin
 npm install --save-dev webpack-dev-server
 npm install --save react-router-dom
 ```
-- Run Webpack server
+- Run Webpack
 
 ```sh
 npm start
