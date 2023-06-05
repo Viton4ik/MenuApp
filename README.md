@@ -68,7 +68,7 @@ python3 manage.py runserver
 - Webpack/React preparation. 
 
 ```sh
-cd FrontEnd Project
+cd FrontEnd
 ```
 - Initialization 
 
