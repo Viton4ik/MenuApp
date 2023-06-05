@@ -1,9 +1,5 @@
 venv
 
-.env
-
-steps.txt //
-
 node_modules
 
 __pycache__
