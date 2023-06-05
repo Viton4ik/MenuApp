@@ -58,11 +58,6 @@ source venv/bin/activate
 cd BackEnd/MenuApp
 pip3 install -r requirements.txt
 ```
-- Go to the project folder
-
-```sh
-cd BackEnd Project
-```
 - Run Django server
 
 ```sh
