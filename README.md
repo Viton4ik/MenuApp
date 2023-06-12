@@ -27,7 +27,7 @@
 ## FrontEnd
 
 - using of Django REST API (http://127.0.0.1:8000/menu/api/)
-- React/Webpack manually adjasted
+- React/Webpack manually adjusted
 - webpack-dev-server
 - Routing
 
